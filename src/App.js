@@ -1,12 +1,21 @@
-import React from "react";
-import Navbar from '../src/components/navbar/Navbar';
+import React from "react"
+import Navbar from "./components/Navbar/Navbar.jsx"
+import Banner from "./components/Banner/Banner.jsx"
+import Card from "./components/Card/Card.jsx"
+import Main from "./components/Main/Main.jsx"
 import "./style/App.css"
 
 function App() {
 
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+      <Main>
+        <Banner />
+        <Card />
+      </Main>
+    </div>
   )
 }
 
-export default App;
+export default App

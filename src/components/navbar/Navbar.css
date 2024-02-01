@@ -1,7 +1,19 @@
 .navbar {
-    font-family: Monserat;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    /**/
+    color: #FF6060;
+    font-size: 24px;
+    height: 68px;
 }
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0%;
+    width: 25%;
+}
+
