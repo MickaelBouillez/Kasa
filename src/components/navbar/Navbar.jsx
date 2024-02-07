@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className='navbar'>
       <div className="navbar_logo">
-        <img src="/Projet-8/kasa/public/logo512.png" alt="Logo" />
+        <img src="/Logo.svg" alt="Logo" />
       </div>
       <ul>
         <li>Accueil</li>

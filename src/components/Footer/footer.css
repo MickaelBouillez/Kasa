@@ -1,0 +1,19 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.footer_logo {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer_text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    margin-top: 3rem;
+}
