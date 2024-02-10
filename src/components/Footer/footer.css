@@ -3,11 +3,13 @@
     color: white;
     padding: 5px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer_logo {
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .footer_text {
@@ -15,5 +17,6 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
