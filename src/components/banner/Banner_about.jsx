@@ -4,7 +4,7 @@ import React from 'react';
 function BannerAbout ()  {
     return (
         <div className='banner_about'>
-            <img src="/banner2.jpg" alt="banner"></img>
+            <img src="/banner2.jpg" alt="banner" className="banner-about"></img>
         </div>
     )
 }

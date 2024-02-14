@@ -11,7 +11,7 @@ function Dropdown({titre, description}) {
             <div className="header-dropdown">
                 <div className="titre-dropdown">{titre}</div>
                 <span className={`fleche-dropdown ${ouvert}`} onClick={() => setOuvert(!ouvert)}>
-                    <img src={fleche} alt="Ouvrir cette liste"/>
+                    <img src={fleche} alt="Ouvrir cette liste"className="fleche-style"/>
                 </span>
             </div>
             {

@@ -8,29 +8,43 @@ body {
 
 .titre-404 {
     color: #ff6060;
-    font-size: 250px;
+    font-family: Montserrat;
+    font-size: 150px;
+    font-weight: 700;
+    text-align: center;
+
 }
 
 .description-404 {
     color: #ff6060;
+    font-family: Montserrat;
     display: block;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .lien-site.lien-404 {
     display: block;
-    margin-top: 150px;
-    font-size: 25px;
-    margin-bottom: 200px;
+    font-family: Montserrat;
+    margin-top: 100px;
+    font-size: 15px;
     color: #ff6060;
+    margin-bottom: 100px;
 }
 
-@media screen and (max-width: 1490px) {
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0px;
+    }
+
+
     .titre-404 {
-        font-size: 96px;
+        font-size: 100px;
     }
 
     .description-404 {
-        font-size: 18px;
+        font-size: 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 }

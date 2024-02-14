@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 10px;
 }
 
 .dropdown {
@@ -17,7 +17,7 @@
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    min-height: 50px;
+    min-height: 35px;
 }
 
 .titre-dropdown {
@@ -31,7 +31,7 @@
 .fleche-dropdown {
     display: flex;
     margin: 0px 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 .fleche-dropdown:hover {
@@ -51,4 +51,21 @@
     color: #ff6060;
     min-height: 60px;
     padding: 20px 15px 10px 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown {
+        width: 100%;
+    }
+
+    .titre-dropdown {
+        font-size: 17px;
+        line-height: 35px;
+        height: 20px;
+        margin: 0px 10px;
+    }
+
+    .fleche-style {
+        width: 17px;
+    }
 }

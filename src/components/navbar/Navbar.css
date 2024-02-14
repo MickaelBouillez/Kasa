@@ -6,14 +6,53 @@
     color: #FF6060;
     font-size: 24px;
     height: 68px;
+    padding: 0px 100px;
+}
+
+.navbar-logo {
+    width: 200px;
+    height: auto;
 }
 
 .navbar ul {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     list-style-type: none;
-    padding: 0%;
-    width: 25%;
 }
 
+.navbar li {
+    margin: 0 20px;
+}
+
+.lien-site {
+    text-decoration: none;
+    font-size: 25px;
+    color: #ff6060;
+}
+
+.lien-site:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 0px 20px;
+    }
+
+    .navbar-logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .navbar ul {
+        padding-left: 0%;
+    }
+
+    .navbar li {
+        margin: 0 10px;
+    }
+
+    .lien-site {
+        font-size: 20px;
+    }
+}
