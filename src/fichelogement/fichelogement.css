@@ -1,3 +1,92 @@
-@media screen and (max-width: 768px) {
+.fiche-logement {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    color: #FF6060;
+}
+
+.location-image {
+    width: 100%;
+    height: 643px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.Part_container{
+    display: flex;
+    align-items: center;
+}
+
+.Part_left{
+    width: 50%;
+}
+
+.Part_right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: auto;
 
 }
+
+.host-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.host-name{
+    margin-right: 10px;
+    width: 64px;
+}
+
+.host-picture{
+    border-radius: 100px;
+    object-fit: cover;
+    width: 64px;
+}
+
+.location-title {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.tag-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.tag-list li {
+    color: white;
+    background-color: #FF6060;
+    padding: 1px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.drop-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.location_description {
+    width: 45%;
+}
+
+.location_equipement {
+    width: 45%;
+}
+
+
+@media screen and (max-width: 768px) {}
