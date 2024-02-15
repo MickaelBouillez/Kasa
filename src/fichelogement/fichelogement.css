@@ -7,21 +7,21 @@
 
 .location-image {
     width: 100%;
-    height: 643px;
+    height: 415px;
     object-fit: cover;
     border-radius: 25px;
 }
 
-.Part_container{
+.Part_container {
     display: flex;
     align-items: center;
 }
 
-.Part_left{
+.Part_left {
     width: 50%;
 }
 
-.Part_right{
+.Part_right {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
 
 }
 
-.host-info{
+.host-info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,12 +38,12 @@
     margin-top: 15px;
 }
 
-.host-name{
+.host-name {
     margin-right: 10px;
     width: 64px;
 }
 
-.host-picture{
+.host-picture {
     border-radius: 100px;
     object-fit: cover;
     width: 64px;
@@ -57,7 +57,7 @@
     margin-bottom: 10px;
 }
 
-.tag-list{
+.tag-list {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -89,4 +89,12 @@
 }
 
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+    .fiche-logement {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 50px;
+        color: #FF6060;
+    }
+}

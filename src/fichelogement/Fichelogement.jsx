@@ -4,6 +4,7 @@ import Footer from "../components/Footer/Footer.jsx";
 import "./fichelogement.css";
 import DropdownSmall from "../components/Dropdown/DropdownSmall.jsx";
 import RatingStars from "../components/Stars/Stars.jsx"
+import SliderDisplay from "../components/SliderDisplay/SliderDisplay.jsx"
 
 function FicheLogement() {
     const [logementData, setLogementData] = useState(null);
@@ -23,7 +24,7 @@ function FicheLogement() {
         <div>
             <Navbar />
             <div className="fiche-logement">
-                <img src={logementData.cover} alt="Cover" className="location-image" />
+                <SliderDisplay logementData={logementData} />
                 <div className="Part_container">
                     <div className="Part_left">
                         <div className="Title-sub">
@@ -44,7 +45,7 @@ function FicheLogement() {
                             <img src={logementData.host.picture} alt="Host" className="host-picture" />
                         </div>
                         <div className="location_rate">
-                            <RatingStars rating={logementData.rating} />
+                            <RatingStars rating={logementData.rating} className="star" />
                         </div>
                     </div>
                 </div>
