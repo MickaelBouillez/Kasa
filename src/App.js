@@ -12,12 +12,13 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/fichelogement/:id" element={<FicheLogement />} /> 
                     <Route path="*" element={<Erreur404 />} />
-                    <Route path="/logement" element={<FicheLogement/>}/>
                 </Routes>
             </Router>
         </div>
     );
 }
+
 
 export default App;

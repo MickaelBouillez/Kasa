@@ -1,20 +1,26 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import "./fichelogement.css";
 import DropdownSmall from "../components/Dropdown/DropdownSmall.jsx";
-import RatingStars from "../components/Stars/Stars.jsx"
-import SliderDisplay from "../components/SliderDisplay/SliderDisplay.jsx"
+import RatingStars from "../components/Stars/Stars.jsx";
+import SliderDisplay from "../components/SliderDisplay/SliderDisplay.jsx";
 
 function FicheLogement() {
+    const { id } = useParams(); // Récupérer l'identifiant du logement depuis l'URL
     const [logementData, setLogementData] = useState(null);
 
     useEffect(() => {
         fetch("/Logement.json")
             .then(response => response.json())
-            .then(data => setLogementData(data[0])) // Sélectionne le premier logement du tableau
+            .then(data => {
+                // Filtrer les données pour trouver le logement correspondant à l'identifiant dans l'URL
+                const selectedLogement = data.find(logement => logement.id === id);
+                setLogementData(selectedLogement);
+            })
             .catch(error => console.error("Erreur lors du chargement des données:", error));
-    }, []);
+    }, [id]); // Mettre à jour lorsque l'identifiant change dans l'URL
 
     if (!logementData) {
         return <div>Chargement des données...</div>;
@@ -66,5 +72,3 @@ function FicheLogement() {
 }
 
 export default FicheLogement;
-
-

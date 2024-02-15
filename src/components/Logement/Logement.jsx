@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./logement.css";
 
 function Logement({ logementData }) {
@@ -7,11 +8,11 @@ function Logement({ logementData }) {
   }
 
   return (
-    <div className="location">
+    <Link to={`/fichelogement/${logementData.id}`} className="location">
       <div className="location-filter"></div>
       <img src={logementData.cover} alt="Cover" className="location-cover" />
       <div className="location_title">{logementData.title}</div>
-    </div>
+    </Link>
   );
 }
 
