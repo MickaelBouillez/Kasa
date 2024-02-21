@@ -3,8 +3,16 @@
     padding-right: 100px;
 }
 
+
+@media screen and (max-width: 900px) {
+    .main {
+        padding: 0px 20px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
-    .main{
+    .main {
         padding: 0px 20px;
     }
 }

@@ -5,6 +5,7 @@
     align-items: flex-end;
     position: relative;
     max-width: 340px;
+    min-height: 340px;
 }
 
 .location_title {
@@ -22,6 +23,7 @@
 .location-cover {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     position: relative;
     border-radius: 10px;
     z-index: 1;
@@ -41,6 +43,7 @@
 
 @media screen and (max-width: 768px) {
     .location {
-        flex-basis: 100%;
+        max-width: 100%;
+        height: auto;
     }
 }

@@ -18,11 +18,11 @@
 }
 
 .Part_left {
-    width: 50%;
+    width: 70%;
 }
 
 .Part_right {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -89,12 +89,43 @@
 }
 
 
+
 @media screen and (max-width: 768px) {
 
     .fiche-logement {
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 50px;
+        padding-top: 20px;
         color: #FF6060;
     }
+
+    .Part_container{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .location-title{
+        font-size: 25px;
+    }
+
+    .Part_left{
+        width: 100%;
+    }
+
+    .Part_right{
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .location_rate{
+        display: flex;
+    }
+
+    .drop-container{
+       flex-direction: column;
+       margin-bottom: 0px;
+    }
+
 }

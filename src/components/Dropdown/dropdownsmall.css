@@ -62,12 +62,16 @@
 
     .titre-dropdownsmall {
         font-size: 17px;
-        line-height: 35px;
-        height: 20px;
         margin: 0px 10px;
     }
 
     .fleche-style2 {
         width: 17px;
+    }
+
+    .location_description, .location_equipement{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
 }
