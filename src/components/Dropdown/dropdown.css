@@ -2,19 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
+    padding-inline: 100px;
 }
 
 .dropdown {
     border-radius: 5px;
     margin-bottom: 35px;
     text-align: left;
-    width: 80%;
+    width: 93%;
 }
 
 .header-dropdown {
     background-color: #ff6060;
-    border-radius: 5px;
+    border-radius: 8px;
     display: flex;
     justify-content: space-between;
     min-height: 35px;
@@ -67,5 +69,9 @@
 
     .fleche-style {
         width: 17px;
+    }
+
+    .dropdown_container{
+        padding-inline: 0;
     }
 }

@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import "./fichelogement.css";
 import Erreur404 from "../404/404.jsx";
-import DropdownSmall from "../components/Dropdown/DropdownSmall.jsx";
+import Dropdown from "../components/Dropdown/Dropdown.jsx";
 import RatingStars from "../components/Stars/Stars.jsx";
 import SliderDisplay from "../components/SliderDisplay/SliderDisplay.jsx";
 
@@ -58,10 +58,10 @@ function FicheLogement() {
                 </div>
                 <div className="drop-container">
                     <div className="location_description">
-                        <DropdownSmall titre="Description" description={logementData.description} />
+                        <Dropdown titre="Description" description={logementData.description} />
                     </div>
                     <div className="location_equipement">
-                        <DropdownSmall titre="Équipements" description={logementData.equipments.map((equipment, index) => (
+                        <Dropdown titre="Équipements" description={logementData.equipments.map((equipment, index) => (
                             <li key={index}>{equipment}</li>
                         ))} />
                     </div>
