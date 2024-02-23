@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import "./fichelogement.css";
+import Erreur404 from "../404/404.jsx";
 import DropdownSmall from "../components/Dropdown/DropdownSmall.jsx";
 import RatingStars from "../components/Stars/Stars.jsx";
 import SliderDisplay from "../components/SliderDisplay/SliderDisplay.jsx";
@@ -23,7 +24,7 @@ function FicheLogement() {
     }, [id]); // Mettre à jour lorsque l'identifiant change dans l'URL
 
     if (!logementData) {
-        return <div>Chargement des données...</div>;
+        return <Erreur404 />;
     }
 
     return (
